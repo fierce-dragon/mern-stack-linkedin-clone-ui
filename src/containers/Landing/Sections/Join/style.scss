@@ -1,0 +1,33 @@
+.section-join {
+  min-height: 840px;
+
+  @media (max-width: 769px) {
+    background: none !important;
+  }
+
+  .join-cta {
+    width: 100%;
+    align-self: flex-start;
+
+    @media (max-width: 769px) {
+      height: 100%;
+      padding: 0;
+    }
+
+    .join-cta-header {
+      margin: 20px 0 40px 0;
+      word-break: keep-all;
+      font-size: 4.375rem;
+      font-family: sans-serif;
+      color: #2977c9;
+      font-weight: 200;
+      line-height: 70px;
+
+      @media (max-width: 769px) {
+        margin: 0 0 24px 0;
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+  }
+}

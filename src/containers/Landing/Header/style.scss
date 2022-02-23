@@ -1,0 +1,107 @@
+.header-nav {
+  z-index: 400;
+  margin: auto;
+  padding: 12px 0 16px;
+  max-width: 1128px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  @media (max-width: 769px) {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  @media (max-width: 1161px) and (min-width: 769px) {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .nav-logo-link {
+    @media (min-width: 1161px) {
+      // margin-right: auto;
+    }
+
+    @media (max-width: 769px) {
+      flex: 1;
+    }
+
+    .nav-logo {
+      color: #0a66c2;
+
+      @media (min-width: 1161px) {
+        width: 135px;
+        height: 34px;
+      }
+
+      @media (max-width: 1161px) and (min-width: 769px) {
+        width: 84px;
+        height: 21px;
+      }
+
+      @media (max-width: 769px) {
+        width: 84px;
+        height: 21px;
+      }
+    }
+  }
+
+  .nav-container {
+    .nav-button {
+      background-color: rgba(0, 0, 0, 0);
+      box-sizing: border-box;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1.25rem;
+      font-weight: 600;
+      height: 32px;
+      line-height: 32px;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      transition-duration: 167ms;
+      transition-property: background-color, box-shadow, color;
+      transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      vertical-align: middle;
+      z-index: 0;
+
+      &.nav-button-tertiary {
+        color: rgba(0, 0, 0, 0.6);
+        padding: 0 8px;
+        border-radius: 4px;
+        margin-right: 12px;
+
+        @media (min-width: 1161px) {
+          height: 40px;
+          line-height: 40px;
+          padding: 0 12px;
+          margin-left: 0;
+        }
+
+        &:hover {
+          background-color: #ebebeb;
+        }
+      }
+
+      &.nav-button-secondary {
+        border: 0;
+        padding: 0 16px;
+        border-radius: 24px;
+        box-shadow: inset 0 0 0 1px #0a66c2;
+        color: #0a66c2;
+
+        @media (min-width: 1161px) {
+          height: 40px;
+          line-height: 40px;
+          padding: 0 24px;
+        }
+
+        &:hover {
+          background-color: #eaf4fe;
+          box-shadow: inset 0 0 0 2px #0a66c2;
+        }
+      }
+    }
+  }
+}

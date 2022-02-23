@@ -1,0 +1,56 @@
+@import './sass/style.react.scss';
+
+body,
+.MuiFormLabel-root,
+.MuiInputBase-root {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell,
+    'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif !important;
+}
+
+.MuiFormControl-root {
+  .MuiFormLabel-root,
+  .MuiInputBase-root {
+    font-size: 1.25rem !important;
+  }
+
+  .MuiFormLabel-root,
+  .MuiFormLabel-root.Mui-focused {
+    color: rgba(0, 0, 0, 0.7) !important;
+  }
+
+  .MuiInputLabel-outlined {
+    transform: translate(14px, 17px) scale(1) !important;
+    &.MuiInputLabel-shrink {
+      transform: translate(14px, 6px) scale(0.8) !important;
+    }
+  }
+
+  &.MuiFormControl-error .MuiOutlinedInput-notchedOutline {
+    border-color: #d11124 !important;
+    border-width: 2px !important;
+  }
+
+  &:not(.MuiFormControl-error)
+    .MuiOutlinedInput-root.Mui-focused
+    .MuiOutlinedInput-notchedOutline {
+    border-color: #0073b1 !important;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 2px !important;
+
+    .PrivateNotchedOutline-legendNotched-4 {
+      max-width: 0 !important;
+    }
+  }
+
+  .MuiInputBase-input {
+    padding-top: 22.5px !important;
+    padding-bottom: 8.5px !important;
+    border-radius: 4px;
+    background: #fff;
+  }
+}

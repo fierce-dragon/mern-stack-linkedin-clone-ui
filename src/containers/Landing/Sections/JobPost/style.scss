@@ -1,0 +1,42 @@
+.section-post-job {
+  min-height: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  background-color: #f1ece5;
+
+  .talent-finder-cta {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 70px 0;
+
+    @media (max-width: 769px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 56px 16px;
+
+      .pill {
+        margin: auto 0;
+      }
+    }
+
+    .talent-finder-cta-header {
+      width: calc(408px + 5px);
+      margin-right: calc(72px - 5px);
+      font-size: 3.125rem;
+      font-weight: 400;
+      font-family: sans-serif;
+      color: #b24020;
+      line-height: 50px;
+
+      @media (max-width: 769px) {
+        margin-bottom: 24px;
+        width: unset;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 40px;
+      }
+    }
+  }
+}

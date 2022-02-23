@@ -1,0 +1,111 @@
+.section-find-jobs {
+  // z-index: -1;
+  min-height: 0;
+  background-color: #faf9f7;
+
+  @media (min-width: 769px) {
+    padding-top: 180px !important;
+    padding-bottom: 120px !important;
+  }
+
+  @media (max-width: 769px) {
+    padding-top: calc(64px + 56px) !important;
+  }
+
+  .search-cta {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 769px) {
+      flex-direction: column;
+    }
+
+    .job-finder-cta {
+      min-width: 408px;
+      margin-right: 72px;
+      align-self: flex-start;
+
+      @media (max-width: 769px) {
+        min-width: 100%;
+        margin: 0 0 24px 0;
+      }
+
+      .job-finder-cta-header {
+        font-size: 3.75rem;
+        color: rgba(0, 0, 0, 0.9);
+        font-family: sans-serif;
+        line-height: 60px;
+        font-weight: 200;
+
+        @media (max-width: 769px) {
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 40px;
+        }
+      }
+    }
+
+    .suggested-search {
+      position: relative;
+      width: 100%;
+      flex-grow: 2;
+      align-self: flex-start;
+
+      @media (max-width: 769px) {
+        margin: 0;
+      }
+
+      .etta-see-more-less-list {
+        .etta-see-more-less-list-header {
+          margin-bottom: 20px;
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: rgba(0, 0, 0, 0.6);
+          text-transform: uppercase;
+          line-height: 20px;
+        }
+
+        .see-more-less-list {
+          .etta-see-more-less-list-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+
+            .see-more-less-list-item {
+              margin-right: 5px;
+              &.show-more-only {
+                display: none;
+              }
+            }
+          }
+
+          .show-more-less-state-label {
+            .etta-see-more-less-list-show-more {
+              font-size: 1.25rem;
+              line-height: 1.5;
+              font-weight: 600;
+              color: rgba(0, 0, 0, 0.6);
+            }
+
+            .chevron-down-icon,
+            .chevron-up-icon {
+              width: 15px;
+              height: 15px;
+              margin-left: 4px;
+            }
+
+            .chevron-up-icon svg {
+              transform: translateY(-10%);
+            }
+
+            .chevron-down-icon svg {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

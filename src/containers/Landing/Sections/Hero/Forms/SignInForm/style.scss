@@ -1,0 +1,12 @@
+.sign-in-form-links {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 12px 0;
+
+  .sign-in-form-forgot-password-link {
+    color: rgba(0, 0, 0, 0.6);
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+}

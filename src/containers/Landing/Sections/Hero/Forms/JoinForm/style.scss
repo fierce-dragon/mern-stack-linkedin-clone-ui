@@ -1,0 +1,15 @@
+.join-form-agreement {
+  font-size: 1.1rem;
+  line-height: 1.42857;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 12px 0;
+
+  .join-form-agreement-item-link {
+    color: #0a66c2;
+    &:hover {
+      color: #0a66c2;
+      text-decoration: underline !important;
+    }
+  }
+}
